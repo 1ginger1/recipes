@@ -1,0 +1,179 @@
+* {
+    font-family: 'Nunito';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.main {
+    background: url('../img/main_bg.jpeg') center center / cover no-repeat ;
+    height: 650px;
+    &__title {
+        text-transform: uppercase;
+        margin-top: 180px;
+        color: #fff;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 35px;
+    }
+    &__subtitle {
+        margin-top: 30px;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.header {
+    min-height: 90px;
+    background-color: rgba($color: #000, $alpha: 0.6);
+    padding: 10px 0;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav {
+    height: 100%;
+    .menu {
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__item {
+            a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                font-weight: 300;
+                font-size: 20px;
+                &:hover {
+                    margin-bottom: 5px;
+                    color: #E10914;
+                    transition: 0.3s all;
+                }
+            }
+        }
+    }
+}
+
+
+
+.title {
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.recipes {
+    padding: 50px 0 80px 0;
+    min-height: 500px;
+    &__title {
+        color: #000; 
+    }
+    &-wrapper {
+        margin-top: 20px;
+        &__item {
+            display: block;
+            text-decoration: none;
+            margin-top: 35px;
+            color: #000;
+        }
+        &__img {
+            display: inline-block;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+                display: block;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &__title {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 27px;
+            font-weight: 500;
+        }
+    }
+}
+
+.about {
+    padding: 80px 0;
+    min-height: 350px;
+    background: url('../img/about_bg.jpg') center center / cover no-repeat;
+    &__substrate {
+        padding: 10px 50px 30px 50px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+    &__title {
+        color: #fff;
+    }
+    &__descr {
+        margin-top: 25px;
+        color: #fff;
+        text-align: justify;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 27px;
+        ul {
+            list-style: circle;
+            li {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 40px 0 20px 0;
+    min-height: 160px;
+    background: #000;
+    &__wrap {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    &-social {
+        width: 200px;
+        &__icon {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            transition: 0.5s;
+            display: block;
+            &:hover {
+                transform: scale(2);
+                color: #1c8fb8;
+            }
+        }
+    }
+    &-menu {
+        margin-top: 35px;
+        nav {
+            width: 60%;
+            a {
+                &:hover {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
