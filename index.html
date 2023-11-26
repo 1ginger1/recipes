@@ -14,17 +14,17 @@
         <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-5">
+                    <a href="index.html" class="col-5">
                         <img src="img/logo.png" alt="" class="logo">
-                    </div>
+                    </a>
                     <div class="col-7">
                         <nav>
                             <ul class="menu">
-                                <li class="menu__item"><a href="/">Главная</a></li>
-                                <li class="menu__item"><a href="/#about_us">О нас</a></li>
+                                <li class="menu__item"><a href="index.html">Главная</a></li>
+                                <li class="menu__item"><a href="index.html#about_us">О нас</a></li>
                                 <li class="menu__item"><a href="allrecipes.html">Рецепты</a></li>
-                                <!-- <a href=""><li class="menu__item">ПП Рецепты</li></a> -->
-                                <li class="menu__item"><a href="">Личный кабинет</a></li>
+                                <!-- <li class="menu__item"><a href="personal.html">Личный кабинет</a></li> -->
+                                <li class="menu__item auth"><a href="">Вход</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -122,5 +122,54 @@
         </div>
     </footer>
 
+    <div class="substrate hide"></div>
+    
+    <div class="modal hide" id="registr">
+        <div class="modal__wrap">
+            <h2 class="modal__title">Регистрация</h2>
+            <div class="modal__close">
+                X
+            </div>
+        </div>
+        <form action="post" class="modal__form">
+            <label for="name">Имя</label>
+            <input type="text" id="name">
+
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname">
+
+            <label for="login">Логин</label>
+            <input type="text" id="login">
+
+            <label for="password">Пароль</label>
+            <input type="text" id="password">
+
+            <button type="submit" class="modal__form-btn">Зарегестрироваться</button>
+        </form>
+
+        <a href="" class="modal__link auth">Войти</a>
+    </div>
+
+    <div class="modal hide" id="auth">
+        <div class="modal__wrap">
+            <h2 class="modal__title">Вход</h2>
+            <div class="modal__close">
+                X
+            </div>
+        </div>
+        <form action="post" class="modal__form">
+            <label for="login">Логин</label>
+            <input type="text" id="login">
+
+            <label for="password">Пароль</label>
+            <input type="text" id="password">
+
+            <button type="submit" class="modal__form-btn">Войти</button>
+        </form>
+
+        <a href="" class="modal__link registr">Зарегестрироваться</a>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

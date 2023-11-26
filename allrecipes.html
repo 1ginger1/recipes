@@ -13,17 +13,16 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <a href="index.html" class="col-5">
                     <img src="img/logo.png" alt="" class="logo">
-                </div>
+                </a>
                 <div class="col-7">
                     <nav>
                         <ul class="menu">
-                            <li class="menu__item"><a href="/">Главная</a></li>
-                            <li class="menu__item"><a href="/#about_us">О нас</a></li>
+                            <li class="menu__item"><a href="index.html">Главная</a></li>
+                            <li class="menu__item"><a href="index.html#about_us">О нас</a></li>
                             <li class="menu__item"><a href="allrecipes.html">Рецепты</a></li>
-                            <!-- <a href=""><li class="menu__item">ПП Рецепты</li></a> -->
-                            <li class="menu__item"><a href="">Личный кабинет</a></li>
+                            <li class="menu__item"><a href="personal.html">Личный кабинет</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -33,18 +32,18 @@
 
     <div class="catalog">
         <div class="container">
-            <h2 class="title">Рецепты</h2>
+            <h1 class="title">Рецепты</h1>
             <div class="row">
                 <div class="col-4 catalog-item">
                     <div class="catalog-item__img">
-                        <img src="https://img.freepik.com/free-photo/piece-delicious-millefeuille-cake-filled-with-sweet-cream_181624-58769.jpg?w=900&t=st=1696435133~exp=1696435733~hmac=48c751e2f3a9e2f5554955cf0c8e994dc5e7c5749b4be7cd2882ac61b65e9daa" alt="торт">
+                        <img src="https://img.freepik.com/premium-photo/napoleon-cake-decorated-with-berries-fruits_135427-8183.jpg?w=1060" alt="торт">
                     </div>
                     <h3 class="catalog-item__title title__item">Торт "Наполеон"</h3>
 
                     <div class="catalog-item__descr">
                         Торт Наполеон в домашних условиях готовят многие: едва ли не у каждой хозяйки, старше 35 лет, имеется свой особенный рецепт. Кстати, предложенный здесь был очень популярен лет так двадцать-тридцать назад. Вполне возможно, что именно по нему готовила ваша бабушка или мама! Некоторых, возможно, испугает присутствие уксуса в составе теста торта. Пожалуйста, не беспокойтесь: в готовых коржах он абсолютно не чувствуется, однако именно этот продукт придает им особую нежность и слоистость. Если же вас продолжает смущать уксус, замените его лимонным соком или белым сухим вином. В любом случае коржи получатся приятно хрупкими, отлично пропитаются заварным кремом, и ваш торт Наполеон принесет вашим домашним и гостям самые что ни на есть восхитительные вкусовые ощущения!
                     </div>
-                    <a href="#" class="catalog-item__btn">Подробнее</a>
+                    <a href="recipe.html" class="catalog-item__btn">Подробнее</a>
                 </div>
 
                 <div class="col-4 catalog-item">
@@ -125,5 +124,54 @@
         </div>
     </footer>
 
+    <div class="substrate hide"></div>
+    
+    <div class="modal hide" id="registr">
+        <div class="modal__wrap">
+            <h2 class="modal__title">Регистрация</h2>
+            <div class="modal__close">
+                X
+            </div>
+        </div>
+        <form action="post" class="modal__form">
+            <label for="name">Имя</label>
+            <input type="text" id="name">
+
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname">
+
+            <label for="login">Логин</label>
+            <input type="text" id="login">
+
+            <label for="password">Пароль</label>
+            <input type="text" id="password">
+
+            <button type="submit" class="modal__form-btn">Зарегестрироваться</button>
+        </form>
+
+        <a href="" class="modal__link auth">Войти</a>
+    </div>
+
+    <div class="modal hide" id="auth">
+        <div class="modal__wrap">
+            <h2 class="modal__title">Вход</h2>
+            <div class="modal__close">
+                X
+            </div>
+        </div>
+        <form action="post" class="modal__form">
+            <label for="login">Логин</label>
+            <input type="text" id="login">
+
+            <label for="password">Пароль</label>
+            <input type="text" id="password">
+
+            <button type="submit" class="modal__form-btn">Войти</button>
+        </form>
+
+        <a href="" class="modal__link registr">Зарегестрироваться</a>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
