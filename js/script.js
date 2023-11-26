@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.location.pathname == '/recipe.html') {
+    if (window.location.toString().indexOf('recipe.html')>0) {
         //Табы информации о рецепте
         const tabContent = document.querySelectorAll('.recipe-tabInfo'),
               tabs = document.querySelectorAll('.recipe__tab'),

@@ -190,7 +190,7 @@ nav {
       .catalog-item__btn:hover {
         background: #E10914;
         color: #fff;
-        border: none; }
+        border-color: #E10914; }
 
 .recipe {
   padding: 50px 0;
